@@ -1,0 +1,36 @@
+const byte led=12, tlacitko = 11;
+int cteni, cteniOld=0, casrozdil, pocetslozek;
+unsigned long 
+void setup() 
+{
+  pinMode(led, OUTPUT);
+  pinMode(tlacitko, INPUT);
+  Serial.begin(9600);
+  
+  // put your setup code here, to run once:
+
+}
+
+void loop() 
+{
+  cteniOld= cteni;
+  cteni = digitalRead(tlacitko);
+if(cteni != cteniOld)
+{ 
+  Serial.print(cteni);Serial.print(" , ");
+
+  }
+ 
+  
+
+  if (cteni == HIGH) 
+  {
+    digitalWrite(led, HIGH);
+  }
+  else
+  {
+    digitalWrite(led, LOW);
+  }
+  // put your main code here, to run repeatedly:
+
+}
