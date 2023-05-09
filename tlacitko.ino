@@ -17,7 +17,7 @@ void setup()
 
 void loop() 
 {
-  cteniOld= cteni;					//Přidejte sledování času mezi stisky tlačítka - jak to uděláte??
+  cteniOld= cteni;					//Přidejte sledování času mezi stisky tlačítka - jak to uděláte??   --To jste neudělal!!!!!!!!!!!!!
   cteni = digitalRead(tlacitko);
 if(cteni != cteniOld)
 { 
@@ -26,7 +26,7 @@ TiskMonitor( cteni);
 
   }
  
-  // Vytvořte metodu pro rozsvícení a zhasnutí Led
+  // Vytvořte metodu pro rozsvícení a zhasnutí Led			--To jste neudělal!!!!!!!!!!!!!
   // LedSvitiAnoNe(int led, int stav) 
 
   if (cteni == HIGH) 
