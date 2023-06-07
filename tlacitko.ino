@@ -8,7 +8,7 @@ unsigned long casMic, casMicOld;
 void setup() 
 {
   pinMode(led, OUTPUT);
-  pinMode(tlacitko, INPUT);
+  pinMode(A0, INPUT);
   Serial.begin(9600);
   
   // put your setup code here, to run once:
